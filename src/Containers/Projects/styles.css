@@ -1,0 +1,127 @@
+.project_icon {
+    background-color: var(--yellow-theme-main-color);
+    height: 130px;
+    width: 130px;
+}
+
+.projects_body_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
+}
+
+.projects_item_card {
+    height: 250px;
+    width: 250px;
+    border: 1px solid var(--yellow-theme-main-color);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px var(--yellow-theme-main-color);
+    transition: transform .5s;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+        margin-top: 20px;
+    }
+}
+
+.project_text {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.projects_item_card:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px var(--yellow-theme-main-color);
+    font-size: 20px;
+}
+
+.project_description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.description_content {
+    margin-top: 120px;
+    height: 150px;
+    width: 80%;
+    border: 1px solid var(--yellow-theme-main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: left;
+    box-shadow: 0px 5px 5px 5px var(--yellow-theme-main-color);
+
+    @media (max-width: 768px) {
+        height: 250px;
+    }
+}
+
+.p_title {
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    align-items: center;
+    font-weight: 600;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.p_technology {
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    align-items: center;
+    margin-top: 10px;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+
+}
+
+.p_description {
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.heading {
+    color: var(--yellow-theme-main-color);
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 20px;
+    width: 90px;
+
+    @media (max-width: 768px) {
+        width: 75px;
+        font-size: 14px;
+    }
+}

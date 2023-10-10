@@ -1,0 +1,79 @@
+.contact_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 190px;
+}
+
+.zoom-out-leave {
+    animation-name: zoom-out-leave;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.zoom-out-enter {
+    animation-name: zoom-out-enter;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom-out-leave {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes zoom-out-enter {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.contact_container_text {
+    color: var(--yellow-theme-main-color);
+    font-family: 'Dosis';
+    font-size: 26px;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
+.contact_container_link {
+    color: var(--yellow-theme-main-color);
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.socialmedia_lists_container {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        justify-content: space-between;
+        margin: 20px;
+    }
+}
+
+.socialmedia_list_item {
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.socialmedia_list_item:hover {
+    transform: scale(1.5);
+}
