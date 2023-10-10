@@ -8,7 +8,7 @@ import './styles.css'
 const Resume = () => {
   const [state, setState] = useState(false)
 
-  const url = 'http://localhost:3000/KarthikResume.pdf'
+  const url = 'https://github.com/karthikvakani/KarthikResume.pdf'
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
